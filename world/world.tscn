@@ -1,10 +1,17 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://world/world.gd" type="Script" id=1]
 [ext_resource path="res://world/PlayerPlaceHolder.gd" type="Script" id=2]
+[ext_resource path="res://world/pnj.gd" type="Script" id=3]
 
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 40, 40 )
+
+[sub_resource type="CylinderShape" id=2]
+radius = 8.0
+
+[sub_resource type="ViewportTexture" id=3]
+viewport_path = NodePath("Pnj/Dialogue/Sprite3D/Viewport")
 
 [node name="world" type="Spatial"]
 script = ExtResource( 1 )
@@ -25,3 +32,41 @@ script = ExtResource( 2 )
 [node name="TestObj2" type="CSGBox" parent="." groups=["DownWorld"]]
 transform = Transform( 0.999699, 0, 0.0245543, 0, 1, 0, -0.0245543, 0, 0.999699, 0.691817, 3.6112, -6.9021 )
 visible = false
+
+[node name="Pnj" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.703403, 1.43919, -5.03336 )
+script = ExtResource( 3 )
+
+[node name="PnjShape" type="CSGCylinder" parent="Pnj"]
+height = 2.924
+sides = 32
+
+[node name="DialogueCollisonArea" type="Area" parent="Pnj"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Pnj/DialogueCollisonArea"]
+shape = SubResource( 2 )
+
+[node name="Dialogue" type="Spatial" parent="Pnj"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.92315, 0 )
+
+[node name="Sprite3D" type="Sprite3D" parent="Pnj/Dialogue"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
+flip_v = true
+texture = SubResource( 3 )
+
+[node name="Viewport" type="Viewport" parent="Pnj/Dialogue/Sprite3D"]
+size = Vector2( 200, 40 )
+
+[node name="ColorRect" type="ColorRect" parent="Pnj/Dialogue/Sprite3D/Viewport"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="Pnj/Dialogue/Sprite3D/Viewport/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "test"
+align = 1
+valign = 1

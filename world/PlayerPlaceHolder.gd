@@ -13,6 +13,7 @@ func _unhandled_input(event):
 		var parent_node = self.get_parent()
 		parent_node.is_up = !parent_node.is_up
 		if parent_node.is_up:
+			# this order is wanted as the last step is always to set to visible
 			for node in get_tree().get_nodes_in_group("DownWorld"):
 				node.visible = false
 			for node in get_tree().get_nodes_in_group("UpWorld"):
@@ -22,3 +23,4 @@ func _unhandled_input(event):
 				node.visible = false
 			for node in get_tree().get_nodes_in_group("DownWorld"):
 				node.visible = true 
+		 # TODO call a method on each ellement, might be to heavy ?
