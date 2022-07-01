@@ -1,0 +1,138 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://gui/key_binding_label/key_binding_labels_container.tscn" type="PackedScene" id=1]
+[ext_resource path="res://gui/menu/menu_header.gd" type="Script" id=2]
+[ext_resource path="res://gui/utils/button_click_sound_utils.gd" type="Script" id=3]
+
+[sub_resource type="Image" id=6]
+data = {
+"data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
+"format": "LumAlpha8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id=2]
+flags = 4
+flags = 4
+image = SubResource( 6 )
+size = Vector2( 16, 16 )
+
+[sub_resource type="StyleBoxTexture" id=3]
+texture = SubResource( 2 )
+region_rect = Rect2( 0, 0, 16, 16 )
+margin_left = 2.0
+margin_right = 2.0
+margin_top = 2.0
+margin_bottom = 2.0
+
+[sub_resource type="StreamTexture" id=4]
+flags = 4
+
+[sub_resource type="StreamTexture" id=5]
+flags = 4
+
+[node name="MenuHeader" type="PanelContainer"]
+margin_right = 1920.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 31 )
+custom_styles/panel = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+text = "no_translate.menu_title"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 1918.0
+margin_bottom = 29.0
+custom_constants/margin_right = 2
+custom_constants/margin_top = 1
+custom_constants/margin_left = 3
+custom_constants/margin_bottom = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+margin_left = 3.0
+margin_top = 1.0
+margin_right = 1914.0
+margin_bottom = 26.0
+alignment = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer"]
+visible = false
+margin_right = 25.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 25 )
+expand = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer"]
+margin_top = 5.0
+margin_right = 1853.0
+margin_bottom = 19.0
+size_flags_horizontal = 3
+text = "no_translate.menu_title"
+align = 1
+valign = 1
+
+[node name="ButtonMinimize" type="Button" parent="MarginContainer/HBoxContainer"]
+margin_left = 1857.0
+margin_right = 1882.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 0 )
+hint_tooltip = "gui.menu.minimize"
+clip_text = true
+expand_icon = true
+script = ExtResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/ButtonMinimize"]
+anchor_left = 0.2
+anchor_top = 0.2
+anchor_right = 0.8
+anchor_bottom = 0.8
+margin_left = -0.0992432
+margin_right = -0.0992432
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = SubResource( 4 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="KeyBindingLabelsContainer" parent="MarginContainer/HBoxContainer/ButtonMinimize" instance=ExtResource( 1 )]
+action = "ui_minimize"
+
+[node name="ButtonClose" type="Button" parent="MarginContainer/HBoxContainer"]
+margin_left = 1886.0
+margin_right = 1911.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 0 )
+hint_tooltip = "gui.menu.close"
+expand_icon = true
+script = ExtResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/ButtonClose"]
+anchor_left = 0.2
+anchor_top = 0.2
+anchor_right = 0.8
+anchor_bottom = 0.8
+margin_left = 0.0992432
+margin_right = 0.0992432
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = SubResource( 5 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="KeyBindingLabelsContainer" parent="MarginContainer/HBoxContainer/ButtonClose" instance=ExtResource( 1 )]
+action = "ui_cancel"

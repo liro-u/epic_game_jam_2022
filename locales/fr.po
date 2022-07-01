@@ -1,0 +1,860 @@
+# Translations template for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# Automatically generated, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-04-22 09:38+0200\n"
+"PO-Revision-Date: 2022-07-01 11:42+0200\n"
+"Last-Translator: ChickenStorm\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Generated-By: Babel 2.8.0\n"
+"X-Generator: Poedit 3.1\n"
+
+#: main.gd:71
+#, python-format
+msgid "Unknown requested scene : %s"
+msgstr ""
+
+#: config/config.gd:53
+#, python-format
+msgid "error while parsing configuration file %s : %s "
+msgstr ""
+
+#: config/config.gd:75
+#, python-format
+msgid "Error while saving configuration file %s : %s "
+msgstr ""
+
+#: global/error.gd:6 global/error.gd:19 global/error.gd:20
+msgid "error.network_error"
+msgstr "Erreur réseau"
+
+#: global/error.gd:13 global/error.gd:15
+msgid "error.connexion_impossible"
+msgstr "Connexion impossible"
+
+#: global/error.gd:13 global/error.gd:17
+msgid "error.server_not_avaliable"
+msgstr "Le serveur de jeu n'est pas disponible."
+
+#: global/error.gd:15
+msgid "error.unkown_domain_name"
+msgstr "Le nom de domaine du serveur est inconnu."
+
+#: global/error.gd:17
+msgid "error.http_not_connected"
+msgstr "Client HTTP non connecté"
+
+#: global/error.gd:19
+msgid "error.network_error_content"
+msgstr "Une erreur réseau est survenue"
+
+#: global/loading_screen.gd:39 global/loading_screen.tscn:166
+#, python-format
+msgid "global.loading.version %s"
+msgstr "Version : %s"
+
+#: global/loading_screen.gd:59
+msgid "global.loading.ok"
+msgstr "OK"
+
+#: global/loading_screen.gd:62
+msgid "global.loading.waiting"
+msgstr "Connexion"
+
+#: global/loading_screen.gd:65
+msgid "global.loading.error"
+msgstr "Erreur"
+
+#: global/loading_screen.gd:121
+#, python-format
+msgid "global.loading.ressource.error %s %d"
+msgstr "Erreur pendant le chargement de %s : %d"
+
+#: global/loading_screen.gd:121 global/loading_screen.gd:139
+msgid "global.loading.ressource."
+msgstr ""
+
+#: global/loading_screen.gd:132 global/loading_screen.gd:135
+#, python-format
+msgid "global.loading.progressbar_ressource %d %d"
+msgstr "%d / %d"
+
+#: global/loading_screen.gd:139
+msgid "global.loading.none_loading"
+msgstr "Fini"
+
+#: global/loading_screen.gd:142
+#, python-format
+msgid "global.loading.progressbar_global %d %d"
+msgstr "%d / %d"
+
+#: global/loading_screen.tscn:78
+msgid "global.loading.loading"
+msgstr "Chargement"
+
+#: global/loading_screen.tscn:103 global/loading_screen.tscn:130
+msgid "0 / 0"
+msgstr ""
+
+#: global/loading_screen.tscn:185
+msgid "global.loading.quit"
+msgstr "Quitter le jeu"
+
+#: global/network.gd:104
+msgid "network.unable_connect"
+msgstr "Le programme n'arrive pas à se connecter"
+
+#: global/network.gd:111
+msgid "network.close_clean_ws"
+msgstr "Fermé, clean :"
+
+#: global/network.gd:118
+msgid "Connected with protocol: "
+msgstr ""
+
+#: global/network.gd:127
+msgid "WS event : "
+msgstr ""
+
+#: global/utils.gd:73
+msgid "action.key.mouse_key_"
+msgstr ""
+
+#: global/debug/debug_panel.tscn:91
+msgid "debug.title"
+msgstr "Debug"
+
+#: global/debug/debug_panel.tscn:127
+msgid "debug.dump_game_data"
+msgstr ""
+
+#: gui/key_binding_label/key_binding_label.tscn:27
+msgid "not_translate.key"
+msgstr ""
+
+#: gui/menu/menu_header.tscn:45 gui/menu/menu_header.tscn:77
+msgid "no_translate.menu_title"
+msgstr ""
+
+#: gui/menu/menu_header.tscn:86
+msgid "gui.menu.minimize"
+msgstr "minimizer"
+
+#: gui/menu/menu_header.tscn:116
+msgid "gui.menu.close"
+msgstr "fermer"
+
+#: menu/credits_scroll_container.gd:10 menu/menu_credits.tscn:110
+msgid "menu.credits.main"
+msgstr ""
+"[center][b][u]Programmation[/u][/b][/center]\n"
+"TODO\n"
+"\n"
+"[center][b][u]Graphisme[/u][/b][/center]\n"
+"TODO\n"
+"\n"
+"[center][b][u]Game design[/u][/b][/center]\n"
+"TODO\n"
+"\n"
+"[center][b][u]Sound design[/u][/b][/center]\n"
+"TODO\n"
+"\n"
+"[center][b][u]Scénariste[/u][/b][/center]\n"
+"TODO\n"
+"\n"
+"[center][b][u]Internationalisation et localisation[/u][/b][/center]\n"
+"TODO [right]Français, Anglais[/right]\n"
+"\n"
+"[center][b][u]Remerciements[/u][/b][/center]\n"
+"\n"
+"[center][b][u]Ressources externes[/u][/b][/center]\n"
+"The Muli Project Authors (contact@sansoxygen.com), [right]Police Muli sous "
+"SIL Open Font License, Version 1.1.[/right]"
+
+#: menu/menu_credits.tscn:131
+msgid "menu.credits.third_party_licenses"
+msgstr "Licences tierce"
+
+#: menu/menu_credits.tscn:138
+msgid "menu.credits.legal_notice_godot"
+msgstr ""
+"Ce jeu utilise Godot Engine, disponible sous la licence suivante :\n"
+"\n"
+"Copyright (c) 2007-2020 Juan Linietsky, Ariel Manzur. Copyright (c) "
+"2014-2020 Contributeurs du moteur Godot.\n"
+"\n"
+"L’autorisation est par les présentes accordée, à titre gratuit, à toute "
+"personne obtenant une copie de ce logiciel et des fichiers de documentation "
+"associés (le « Logiciel »), d’utiliser le Logiciel sans restriction, y "
+"compris, sans limitation, les droits d’utilisation, de copie, de "
+"modification, de fusion, de publication, de distribution, de sous-licence et/"
+"ou de vente de copies du Logiciel, et d’autoriser les personnes à qui le "
+"Logiciel est fourni à le faire, sous réserve des conditions suivantes :\n"
+"\n"
+"L’avis de droit d’auteur ci-dessus et cet avis d’autorisation doivent être "
+"inclus dans toutes les copies ou parties substantielles du logiciel.\n"
+"\n"
+"THE SOFTWARE IS PROVIDED « AS IS », WITHOUT WARRANTY OF ANY KIND, EXPRESS OR "
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE "
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS "
+"IN THE SOFTWARE."
+
+#: menu/menu_credits.tscn:155
+msgid "menu.credits.back_main_menu"
+msgstr "Retourner au menu principal"
+
+#: menu/menu_option.tscn:42
+msgid "menu.option.back_main_menu"
+msgstr "Sauver et retourner au menu principal"
+
+#: menu/menu_screen.tscn:78
+msgid "menu.main.title"
+msgstr ""
+
+#: menu/menu_screen.tscn:113
+msgid "menu.main.play"
+msgstr "Jouer"
+
+#: menu/menu_screen.tscn:124
+msgid "menu.main.options"
+msgstr "Options"
+
+#: menu/menu_screen.tscn:135
+msgid "menu.main.credits"
+msgstr "Crédits"
+
+#: menu/menu_screen.tscn:146
+msgid "menu.main.quit"
+msgstr "Quitter"
+
+#: menu/option.gd:13
+msgid "menu.option.tab.shortcuts"
+msgstr "Raccourcis"
+
+#: menu/option.gd:14
+msgid "menu.option.tab.audio"
+msgstr "Volumes et sons"
+
+#: menu/option.gd:15
+msgid "menu.option.tab.graphical"
+msgstr "Graphiques"
+
+#: menu/option.gd:16
+msgid "menu.option.tab.lang"
+msgstr "Langues"
+
+#: menu/option.tscn:81
+msgid "menu.option.shortcut.fleet_and_ships"
+msgstr "Flottes et Vaisseaux"
+
+#: menu/option.tscn:115
+msgid "menu.option.shortcut.map"
+msgstr "Carte"
+
+#: menu/option.tscn:197
+msgid "menu.option.shortcut.hud"
+msgstr "HUD"
+
+#: menu/option.tscn:223
+msgid "menu.option.shortcut.general"
+msgstr "General"
+
+#: menu/options/audio_volume_control.gd:21
+msgid "audio.bus."
+msgstr ""
+
+#: menu/options/audio_volume_control.gd:28
+#, python-format
+msgid "menu.option.audio.volume_label %d %f"
+msgstr "Volume : %3.3d %% (%7.2f dB)"
+
+#: menu/options/audio_volume_control.tscn:34
+msgid "no_translate.bus_name"
+msgstr ""
+
+#: menu/options/audio_volume_control.tscn:78
+msgid "no_translate.Volume : 100 % (0 dB)"
+msgstr ""
+
+#: menu/options/graphical_option.tscn:22
+msgid "menu.option.graphical.fullscreen"
+msgstr "Plein écran"
+
+#: menu/options/graphical_option.tscn:30
+msgid "menu.option.graphical.maximize"
+msgstr "Maximiser"
+
+#: menu/options/graphical_option.tscn:38
+msgid "menu.option.graphical.resize"
+msgstr "Redimentioner"
+
+#: menu/options/graphical_option.tscn:46
+msgid "menu.option.graphical.display_id"
+msgstr "Ecran"
+
+#: menu/options/option_array.tscn:31
+msgid "no_translate.Option_Name"
+msgstr ""
+
+#: menu/options/option_array.tscn:48
+msgid "no_transalte.item_0"
+msgstr ""
+
+#: menu/options/option_boolean.tscn:36 menu/options/option_int.tscn:35
+msgid "no_translate.Option_Label"
+msgstr ""
+
+#: menu/options/option_key_binding.gd:22 menu/options/option_key_binding.gd:44
+#: menu/options/option_key_binding.tscn:35
+msgid "action."
+msgstr ""
+
+#: menu/options/option_lang.tscn:20
+msgid "menu.option.lang.language"
+msgstr "Langues"
+
+#~ msgid "menu.credits.website"
+#~ msgstr "Site web"
+
+#~ msgid "menu.credits.discord"
+#~ msgstr "Serveur Discord"
+
+#~ msgid "menu.credits.dev_comunity_label"
+#~ msgstr "Développé par la communauté de Kalaxia"
+
+#~ msgid "menu.main.create_lobby"
+#~ msgstr "Créer une partie"
+
+#, python-format
+#~ msgid "game.faction_score.victory_points %d"
+#~ msgstr "%d points de victoire"
+
+#~ msgid "game.notification.goal.title"
+#~ msgstr "Objectifs"
+
+#~ msgid "game.notification.goal.content"
+#~ msgstr "Capturer et tenir les systèmes stratégiques"
+
+#~ msgid "game.receive_credits_notif.title"
+#~ msgstr "Transfert de credits"
+
+#, python-format
+#~ msgid "game.receive_credits_notif.content %s %d"
+#~ msgstr "%s vous a envoyé %d credits"
+
+#~ msgid "game.receive_fleet.title"
+#~ msgstr "Transfert de flotte"
+
+#, python-format
+#~ msgid "game.receive_fleet.content %s"
+#~ msgstr "%s vous a envoyé une flotte"
+
+#~ msgid "game.score.victory"
+#~ msgstr "Victoire !"
+
+#~ msgid "game.score.defeat"
+#~ msgstr "Défaite"
+
+#~ msgid "game.score.back_main_menu"
+#~ msgstr "Retourner au menu principal"
+
+#~ msgid "global.loading.network"
+#~ msgstr "Reseau"
+
+#~ msgid "global.loading.auth_status"
+#~ msgstr "Authentification"
+
+#~ msgid "global.loading.wating"
+#~ msgstr "Connexion"
+
+#~ msgid "global.loading.faction_status"
+#~ msgstr "Receptions des factions"
+
+#~ msgid "global.loading.constants_status"
+#~ msgstr "Receptions des constantes"
+
+#~ msgid "global.loading.ships_status"
+#~ msgstr "Receptions des vaisseaux"
+
+#~ msgid "global.loading.building_status"
+#~ msgstr "Reception des batiments"
+
+#~ msgid "hud.scores"
+#~ msgstr "Scores"
+
+#~ msgid "hud.wallet.0"
+#~ msgstr "0"
+
+#~ msgid "hud.menu.finance.title"
+#~ msgstr "Finances"
+
+#~ msgid "hud.menu.finance.transfer.credit_to_send"
+#~ msgstr "Transfert de credits"
+
+#~ msgid "hud.menu.finance.transfet.select_player"
+#~ msgstr "Selectioner un.e joueu.r.se"
+
+#~ msgid "hud.menu.finance.transfer.send"
+#~ msgstr "envoyer"
+
+#~ msgid "hud.menu.finance.transfer"
+#~ msgstr "Transfert de credits"
+
+#~ msgid "hud.menu.option.title"
+#~ msgstr "Options"
+
+#~ msgid "hud.system.add_fleet"
+#~ msgstr "Ajouter une flotte"
+
+#~ msgid "hud.details.buidlng.contruction"
+#~ msgstr "Construire un batiment"
+
+#~ msgid "hud.system_details.building.hangar"
+#~ msgstr "Hangar"
+
+#~ msgid "hud.details.building.hangar.menu_title"
+#~ msgstr "Hangar"
+
+#~ msgid "hud.details.building.hangar.production_line"
+#~ msgstr "Fille de production :"
+
+#~ msgid "hud.details.building.hangar.order_ship"
+#~ msgstr "Commande de vaisseaux"
+
+#~ msgid "hud.details.building.hangar.hangar_ship"
+#~ msgstr "Vaisseaux dans le hangar"
+
+#, python-format
+#~ msgid "hud.details.buidlng.cost %d"
+#~ msgstr "%d"
+
+#, python-format
+#~ msgid "hud.details.buidlng.time %d"
+#~ msgstr "%d"
+
+#~ msgid "notification.error.not_enought_cred.title"
+#~ msgstr "Commande impossible"
+
+#~ msgid "notification.error.not_enought_cred.content"
+#~ msgstr "Pas assez de credits"
+
+#~ msgid "hud.details.buidlng.construction.construction_item.build"
+#~ msgstr "Construire"
+
+#~ msgid "hud.details.building.construction_menu.title"
+#~ msgstr "Batiments"
+
+#, python-format
+#~ msgid "hud.details.building.hangar.number_of_ships %d"
+#~ msgstr "%d"
+
+#, python-format
+#~ msgid "hud.details.building.hangar.ship_model %s"
+#~ msgstr "Modèle : %s"
+
+#, python-format
+#~ msgid "hud.details.building.hangar.time_remaining %d"
+#~ msgstr "temps restant : %d s"
+
+#, python-format
+#~ msgid "hud.system.building.hangar.build_max %d"
+#~ msgstr "Commande max (%d)"
+
+#, python-format
+#~ msgid "hud.details.building.hangar.price %d"
+#~ msgstr "prix : %d"
+
+#, python-format
+#~ msgid "hud.details.building.hangar.time %.1f"
+#~ msgstr "%.1f s"
+
+#, python-format
+#~ msgid "hud.details.building.hangar.hit_point %d"
+#~ msgstr "%d"
+
+#, python-format
+#~ msgid "hud.details.building.hangar.damage %d"
+#~ msgstr "%d"
+
+#, python-format
+#~ msgid "hud.details.building.hangar.accuracy %d"
+#~ msgstr "%d %%"
+
+#, python-format
+#~ msgid "hud.details.building.hangar.time %f.1"
+#~ msgstr "%f.1"
+
+#~ msgid "hud.system.building.hangar.build"
+#~ msgstr "Commander"
+
+#, python-format
+#~ msgid "hud.details.building.hangar.number_of_ship %d"
+#~ msgstr "%d"
+
+#~ msgid "hud.fleet_item.open_menu"
+#~ msgstr "Composition"
+
+#~ msgid "hud.fleet_item.give"
+#~ msgstr "Donner"
+
+#~ msgid "hud.details.fleet.fleet_composition_assignation"
+#~ msgstr "Assigner des vaisseaux à la flotte"
+
+#~ msgid "hud.details.fleet.force_build_ship"
+#~ msgstr "Contruire les vaisseaux manquants"
+
+#, python-format
+#~ msgid "hud.system.fleet.menu.card.time %d"
+#~ msgstr "%d s"
+
+#, python-format
+#~ msgid "hud.system.fleet.menu.card.number %d"
+#~ msgstr "%d"
+
+#, python-format
+#~ msgid "hud.details.fleet.ship_model %s"
+#~ msgstr "Modèle : %s"
+
+#, python-format
+#~ msgid "hud.details.fleet.hit_point %d"
+#~ msgstr "%d"
+
+#, python-format
+#~ msgid "hud.details.fleet.damage %d"
+#~ msgstr "%d"
+
+#, python-format
+#~ msgid "hud.details.fleet.accuracy %d"
+#~ msgstr "%d %%"
+
+#, python-format
+#~ msgid "hud.details.fleet.price %d"
+#~ msgstr "%d"
+
+#, python-format
+#~ msgid "hud.details.fleet.number_of_ship_fleet %d %d"
+#~ msgstr "%d / %d"
+
+#, python-format
+#~ msgid "hud.details.fleet.number_of_ship_total %d"
+#~ msgstr "%d"
+
+#, python-format
+#~ msgid "hud.details.fleet.max_assign %d"
+#~ msgstr "tout assigner (%d)"
+
+#~ msgid "hud.details.fleet.select_model"
+#~ msgstr "Sélectionnez un model"
+
+#~ msgid "hud.details.fleet.ship_to_assign"
+#~ msgstr "nombre de vaisseaux à assigner"
+
+#~ msgid "hud.details.system.fleet.menu.group_ship.set"
+#~ msgstr "Assigner"
+
+#~ msgid "hud.details.fleet.request_price_text"
+#~ msgstr "prix de contruction"
+
+#, python-format
+#~ msgid "hud.details.fleet.number_of_ship_fleet %d"
+#~ msgstr "%d"
+
+#~ msgid "audio.bus.Master"
+#~ msgstr "Volume général"
+
+#~ msgid "audio.bus.UI"
+#~ msgstr "Interface utilisateur"
+
+#~ msgid "audio.bus.Ambient"
+#~ msgstr "Ambiant"
+
+#~ msgid "action.ui_accept"
+#~ msgstr "UI accepter"
+
+#~ msgid "action.ui_select"
+#~ msgstr "UI sélectionner"
+
+#~ msgid "action.ui_cancel"
+#~ msgstr "UI annuler"
+
+#~ msgid "action.ui_focus_next"
+#~ msgstr "UI focus suivant"
+
+#~ msgid "action.ui_focus_prev"
+#~ msgstr "UI focus précédent"
+
+#~ msgid "action.ui_left"
+#~ msgstr "UI gauche"
+
+#~ msgid "action.ui_right"
+#~ msgstr "UI droite"
+
+#~ msgid "action.ui_up"
+#~ msgstr "UI haut"
+
+#~ msgid "action.ui_down"
+#~ msgstr "UI bas"
+
+#~ msgid "action.ui_page_up"
+#~ msgstr "Page up"
+
+#~ msgid "action.ui_page_down"
+#~ msgstr "Page down"
+
+#~ msgid "action.ui_home"
+#~ msgstr "Home"
+
+#~ msgid "action.ui_end"
+#~ msgstr "Fin"
+
+#~ msgid "action.ui_add_fleet"
+#~ msgstr "Ajouter une flotte"
+
+#~ msgid "action.ui_select_fleet"
+#~ msgstr "Sélectionner une flotte"
+
+#~ msgid "action.ui_add_ships"
+#~ msgstr "Ajouter un vaisseau"
+
+#~ msgid "action.ui_zoom_in_map"
+#~ msgstr "Zoomer"
+
+#~ msgid "action.ui_zoom_out_map"
+#~ msgstr "Dézoomer"
+
+#~ msgid "action.ui_drag_map"
+#~ msgstr "Déplacer la carte"
+
+#~ msgid "action.ui_move_map_left"
+#~ msgstr "Déplacer la carte vers la gauche"
+
+#~ msgid "action.ui_move_map_right"
+#~ msgstr "Déplacer la carte vers la droite"
+
+#~ msgid "action.ui_move_map_up"
+#~ msgstr "Déplacer la carte vers le haut"
+
+#~ msgid "action.ui_move_map_down"
+#~ msgstr "Déplacer la carte vers le bas"
+
+#~ msgid "action.ui_forbbiden_key_rebind"
+#~ msgstr "Touches non assignable"
+
+#~ msgid "action.ui_minimize"
+#~ msgstr "Minimizer"
+
+#~ msgid "action.key.mouse_key_1"
+#~ msgstr "clic gauche"
+
+#~ msgid "action.key.mouse_key_2"
+#~ msgstr "clic droit"
+
+#~ msgid "action.key.mouse_key_3"
+#~ msgstr "clic milieu"
+
+#~ msgid "action.key.mouse_key_4"
+#~ msgstr "scroll haut"
+
+#~ msgid "action.key.mouse_key_5"
+#~ msgstr "scroll bas"
+
+#~ msgid "Adranite"
+#~ msgstr "Adranite"
+
+#~ msgid "Kalankar"
+#~ msgstr "Kalankar"
+
+#~ msgid "Valkar"
+#~ msgstr "Valkar"
+
+#~ msgid "action.ui_map_center_system"
+#~ msgstr "Centrer sur le syteme selectioné"
+
+#~ msgid "action.ui_hud_scores"
+#~ msgstr "Afficher les scores"
+
+#~ msgid "ship.fighter"
+#~ msgstr "chasseur"
+
+#~ msgid "ship.corvette"
+#~ msgstr "corvette"
+
+#~ msgid "ship.frigate"
+#~ msgstr "frégate"
+
+#~ msgid "ship.cruiser"
+#~ msgstr "croiseur"
+
+#~ msgid "global.loading.ressource.loading"
+#~ msgstr ""
+#~ "Vous ne devriez pas voir ce texte. Si vous le voyez contatcter les "
+#~ "developpeur. Chargement cyclique"
+
+#~ msgid "global.loading.ressource.menu"
+#~ msgstr "Menu"
+
+#~ msgid "global.loading.ressource.lobby"
+#~ msgstr "Lobby"
+
+#~ msgid "global.loading.ressource.game_loading"
+#~ msgstr "Ecran de chargement pre-jeu"
+
+#~ msgid "global.loading.ressource.game"
+#~ msgstr "Carte"
+
+#~ msgid "global.loading.ressource.scores"
+#~ msgstr "Scores"
+
+#~ msgid "global.loading.ressource.option_menu"
+#~ msgstr "Options"
+
+#~ msgid "global.loading.ressource.credits_menu"
+#~ msgstr "Credits"
+
+#~ msgid "global.loading.ressource.scores_hud"
+#~ msgstr "Scores dans HUD"
+
+#~ msgid "global.loading.ressource.hud"
+#~ msgstr "HUD"
+
+#~ msgid "hud.details.buidlng.mine"
+#~ msgstr "Mine"
+
+#~ msgid "hud.details.buidlng.portal"
+#~ msgstr "Portail"
+
+#~ msgid "hud.details.buidlng.shipyard"
+#~ msgstr "Chantier spatial"
+
+#~ msgid "lobby.game_settings.size.very_small"
+#~ msgstr "très petit"
+
+#~ msgid "lobby.game_settings.size.small"
+#~ msgstr "petit"
+
+#~ msgid "lobby.game_settings.size.medium"
+#~ msgstr "moyen"
+
+#~ msgid "lobby.game_settings.size.large"
+#~ msgstr "grand"
+
+#~ msgid "lobby.game_settings.size.very_large"
+#~ msgstr "très grand"
+
+#~ msgid "lobby.game_settings.speed.slow"
+#~ msgstr "lent"
+
+#~ msgid "lobby.game_settings.speed.medium"
+#~ msgstr "moyen"
+
+#~ msgid "lobby.game_settings.speed.fast"
+#~ msgstr "rapide"
+
+#~ msgid "hud.hud_menu.back_main_menu"
+#~ msgstr "Retourner au menu principal"
+
+#~ msgid "general.formation.rear"
+#~ msgstr "arrière"
+
+#~ msgid "general.formation.center"
+#~ msgstr "centre"
+
+#~ msgid "general.formation.left"
+#~ msgstr "gauche"
+
+#~ msgid "general.formation.right"
+#~ msgstr "droite"
+
+#, python-format
+#~ msgid "menu.loading.number_player %d"
+#~ msgstr "%d joueurs"
+
+#~ msgid "menu.loading.loading"
+#~ msgstr "Chargement"
+
+#~ msgid "menu.loading.number_player"
+#~ msgstr "%d joueurs"
+
+#~ msgid "lobby.game_settings"
+#~ msgstr "Options du jeu"
+
+#~ msgid "lobby.game_settings.size"
+#~ msgstr "Taille"
+
+#~ msgid "lobby.game_settings.speed"
+#~ msgstr "Vitesse"
+
+#~ msgid "menu.lobby.launch"
+#~ msgstr "Lancer"
+
+#~ msgid "menu.lobby.quit"
+#~ msgstr "Quitter"
+
+#, python-format
+#~ msgid "menu.lobby_card.player_count %d %d"
+#~ msgstr "%d / %d"
+
+#~ msgid "menu.lobby_card.join"
+#~ msgstr "Rejoindre"
+
+#~ msgid "menu.player_info.input_text_placeholder"
+#~ msgstr "nom d'utilisateur"
+
+#~ msgid "menu.player_info.faction_drop_down_0"
+#~ msgstr "Faction"
+
+#~ msgid "general.unkown_username"
+#~ msgstr "Inconnu"
+
+#~ msgid "matchmaking.error.username_already_taken.title"
+#~ msgstr "Ce pseudo existe déjà"
+
+#~ msgid "matchmaking.error.username_already_taken.content"
+#~ msgstr "Un autre joueur de cette partie utilise déjà ce pseudo"
+
+#~ msgid "menu.player_info.ready"
+#~ msgstr "Prêt.e ?"
+
+#, python-format
+#~ msgid "store.game_of %s"
+#~ msgstr "Partie de %s"
+
+#~ msgid "store.new_game"
+#~ msgstr "Nouvelle partie"
+
+#~ msgid "hud.system.fleet.menu.card.add"
+#~ msgstr "ajouter"
+
+#~ msgid "notification.ok"
+#~ msgstr "OK"
+
+#~ msgid "general.WIP"
+#~ msgstr "Pas encore implémenté"
+
+#~ msgid "hud.system.building"
+#~ msgstr "Batiments"
+
+#~ msgid "hud.system.add_fleet.key_binding"
+#~ msgstr "%s : créer une flotte"
+
+#~ msgid "hud.system.add_one_ship.key_binding"
+#~ msgstr "%s : ajouter un vaisseau"
+
+#~ msgid "hud.system.add_five_ship.key_binding"
+#~ msgstr "SHIFT+%s : ajouter 5 vaisseaux"
+
+#~ msgid "hud.system.select_fleet.key_binding"
+#~ msgstr "1-9 : sélectionner une flotte"

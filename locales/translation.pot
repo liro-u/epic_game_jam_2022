@@ -1,0 +1,135 @@
+# Translations template for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-07-01 11:36+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: main.gd:71
+#, python-format
+msgid "Unknown requested scene : %s"
+msgstr ""
+
+#: config/config.gd:47
+#, python-format
+msgid "error while parsing configuration file %s : %s "
+msgstr ""
+
+#: config/config.gd:69
+#, python-format
+msgid "Error while saving configuration file %s : %s "
+msgstr ""
+
+#: global/error.gd:6 global/error.gd:19 global/error.gd:20
+msgid "error.network_error"
+msgstr ""
+
+#: global/error.gd:13 global/error.gd:15
+msgid "error.connexion_impossible"
+msgstr ""
+
+#: global/error.gd:13 global/error.gd:17
+msgid "error.server_not_avaliable"
+msgstr ""
+
+#: global/error.gd:15
+msgid "error.unkown_domain_name"
+msgstr ""
+
+#: global/error.gd:17
+msgid "error.http_not_connected"
+msgstr ""
+
+#: global/error.gd:19
+msgid "error.network_error_content"
+msgstr ""
+
+#: global/loading_screen.gd:39
+#, python-format
+msgid "global.loading.version %s"
+msgstr ""
+
+#: global/loading_screen.gd:59
+msgid "global.loading.ok"
+msgstr ""
+
+#: global/loading_screen.gd:62
+msgid "global.loading.waiting"
+msgstr ""
+
+#: global/loading_screen.gd:65
+msgid "global.loading.error"
+msgstr ""
+
+#: global/loading_screen.gd:121
+#, python-format
+msgid "global.loading.ressource.error %s %d"
+msgstr ""
+
+#: global/loading_screen.gd:121 global/loading_screen.gd:139
+msgid "global.loading.ressource."
+msgstr ""
+
+#: global/loading_screen.gd:132 global/loading_screen.gd:135
+#, python-format
+msgid "global.loading.progressbar_ressource %d %d"
+msgstr ""
+
+#: global/loading_screen.gd:139
+msgid "global.loading.none_loading"
+msgstr ""
+
+#: global/loading_screen.gd:142
+#, python-format
+msgid "global.loading.progressbar_global %d %d"
+msgstr ""
+
+#: global/utils.gd:73
+msgid "action.key.mouse_key_"
+msgstr ""
+
+#: menu/credits_scroll_container.gd:10
+msgid "menu.credits.main"
+msgstr ""
+
+#: menu/option.gd:13
+msgid "menu.option.tab.shortcuts"
+msgstr ""
+
+#: menu/option.gd:14
+msgid "menu.option.tab.audio"
+msgstr ""
+
+#: menu/option.gd:15
+msgid "menu.option.tab.graphical"
+msgstr ""
+
+#: menu/option.gd:16
+msgid "menu.option.tab.lang"
+msgstr ""
+
+#: menu/options/audio_volume_control.gd:21
+msgid "audio.bus."
+msgstr ""
+
+#: menu/options/audio_volume_control.gd:28
+#, python-format
+msgid "menu.option.audio.volume_label %d %f"
+msgstr ""
+
+#: menu/options/option_key_binding.gd:22 menu/options/option_key_binding.gd:44
+msgid "action."
+msgstr ""
+

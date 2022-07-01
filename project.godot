@@ -1,0 +1,166 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Resource",
+"class": "AudioResource",
+"language": "GDScript",
+"path": "res://audio/audio_resource.gd"
+}, {
+"base": "Node",
+"class": "AudioStacking",
+"language": "GDScript",
+"path": "res://audio/audio_stacking.gd"
+}, {
+"base": "AudioStacking",
+"class": "AudioStacking2D",
+"language": "GDScript",
+"path": "res://audio/audio_stacking_2d.gd"
+}, {
+"base": "AudioStacking2D",
+"class": "AudioStacking3D",
+"language": "GDScript",
+"path": "res://audio/audio_stacking_3d.gd"
+}, {
+"base": "AudioStacking",
+"class": "AudioStackingSingleSound",
+"language": "GDScript",
+"path": "res://audio/audio_stacking_single_resource.gd"
+}, {
+"base": "PanelContainer",
+"class": "ButtonPanelContainer",
+"language": "GDScript",
+"path": "res://gui/button_panel_container.gd"
+}, {
+"base": "CustomShapeButton",
+"class": "CircularButton",
+"language": "GDScript",
+"path": "res://gui/circular_button.gd"
+}, {
+"base": "Container",
+"class": "CircularContainer",
+"language": "GDScript",
+"path": "res://gui/container_circular.gd"
+}, {
+"base": "Control",
+"class": "CustomShapeButton",
+"language": "GDScript",
+"path": "res://gui/custom_shape_button.gd"
+}, {
+"base": "Resource",
+"class": "EnvironmentConfig",
+"language": "GDScript",
+"path": "res://config/environment_config.gd"
+}, {
+"base": "Node",
+"class": "ErrorHandler",
+"language": "GDScript",
+"path": "res://global/error.gd"
+}, {
+"base": "PanelContainer",
+"class": "MenuBody",
+"language": "GDScript",
+"path": "res://gui/menu/menu_body.gd"
+}, {
+"base": "VBoxContainer",
+"class": "MenuContainer",
+"language": "GDScript",
+"path": "res://gui/menu/menu_container.gd"
+}, {
+"base": "PanelContainer",
+"class": "MenuHeader",
+"language": "GDScript",
+"path": "res://gui/menu/menu_header.gd"
+}, {
+"base": "PanelContainer",
+"class": "OptionKeyBinding",
+"language": "GDScript",
+"path": "res://menu/options/option_key_binding.gd"
+}, {
+"base": "PanelContainer",
+"class": "SelectablePanelContainer",
+"language": "GDScript",
+"path": "res://gui/selectable_panel_container.gd"
+}, {
+"base": "SpinBox",
+"class": "SpinBoxImediateUpdate",
+"language": "GDScript",
+"path": "res://gui/spin_box_imediate_update.gd"
+}, {
+"base": "CustomShapeButton",
+"class": "TransparentCircleButton",
+"language": "GDScript",
+"path": "res://gui/transparent_circle_button.gd"
+}, {
+"base": "Object",
+"class": "Utils",
+"language": "GDScript",
+"path": "res://global/utils.gd"
+}, {
+"base": "Resource",
+"class": "Version",
+"language": "GDScript",
+"path": "res://global/resources/version.gd"
+}, {
+"base": "PanelContainer",
+"class": "VolumeOption",
+"language": "GDScript",
+"path": "res://menu/options/audio_volume_control.gd"
+} ]
+_global_script_class_icons={
+"AudioResource": "",
+"AudioStacking": "res://resources/editor/audio_stacking.svg",
+"AudioStacking2D": "res://resources/editor/audio_stacking_2d.svg",
+"AudioStacking3D": "res://resources/editor/audio_stacking_3d.svg",
+"AudioStackingSingleSound": "res://resources/editor/audio_stacking.svg",
+"ButtonPanelContainer": "res://resources/editor/selectable_container.svg",
+"CircularButton": "res://resources/editor/custom_circular_button.svg",
+"CircularContainer": "res://resources/editor/circular_container.svg",
+"CustomShapeButton": "res://resources/editor/custom_shape_button.svg",
+"EnvironmentConfig": "",
+"ErrorHandler": "",
+"MenuBody": "res://resources/editor/menu_body.svg",
+"MenuContainer": "res://resources/editor/menu_container.svg",
+"MenuHeader": "res://resources/editor/menu_header.svg",
+"OptionKeyBinding": "",
+"SelectablePanelContainer": "res://resources/editor/selectable_container.svg",
+"SpinBoxImediateUpdate": "res://resources/editor/spin_box_imediate_update.svg",
+"TransparentCircleButton": "res://resources/editor/custom_circle_button.svg",
+"Utils": "",
+"Version": "",
+"VolumeOption": ""
+}
+
+[application]
+
+config/name="Epic game jam 2022"
+run/main_scene="res://main.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Store="*res://global/store.gd"
+Config="*res://config/config.gd"
+Audio="*res://audio/audio.gd"
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/size/resizable=false
+
+[locale]
+
+translations=PoolStringArray( "res://locales/fr.po", "res://locales/en.po" )
+locale_filter=[ 0, [ "en", "fr" ] ]
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
