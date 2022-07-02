@@ -1,0 +1,229 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://src/player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/texture/prototype/Dark/texture_13.png" type="Texture" id=2]
+[ext_resource path="res://Game.gd" type="Script" id=3]
+[ext_resource path="res://assets/texture/prototype/Orange/texture_01.png" type="Texture" id=4]
+[ext_resource path="res://src/debug/debug.gd" type="Script" id=5]
+
+[sub_resource type="BoxShape" id=8]
+extents = Vector3( 5, 5, 1 )
+
+[sub_resource type="CubeMesh" id=9]
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_texture = ExtResource( 4 )
+uv1_triplanar = true
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 50, 1, 50 )
+
+[sub_resource type="CubeMesh" id=3]
+size = Vector3( 100, 2, 100 )
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_texture = ExtResource( 2 )
+uv1_triplanar = true
+
+[sub_resource type="CubeMesh" id=5]
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0, 0.368627, 1, 1 )
+
+[sub_resource type="Environment" id=7]
+
+[node name="Game" type="Node"]
+script = ExtResource( 3 )
+
+[node name="playground" type="Spatial" parent="."]
+
+[node name="StaticBody" type="StaticBody" parent="playground"]
+
+[node name="CollisionShape" type="CollisionShape" parent="playground/StaticBody"]
+transform = Transform( 0.403785, 0.914854, 0, -0.914854, 0.403785, 0, 0, 0, 1, 11.3847, -2.5131, -4.16602 )
+shape = SubResource( 8 )
+
+[node name="MeshInstance" type="MeshInstance" parent="playground/StaticBody/CollisionShape"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 1, 0, 0, 0 )
+mesh = SubResource( 9 )
+material/0 = SubResource( 10 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="playground/StaticBody"]
+transform = Transform( 2.85943, 0, 0, 0, 1, 0, 0, 0, 2.85943, -7.68762, -2.5131, -12.2586 )
+shape = SubResource( 8 )
+
+[node name="MeshInstance" type="MeshInstance" parent="playground/StaticBody/CollisionShape4"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 1, 0, 0, 0 )
+mesh = SubResource( 9 )
+material/0 = SubResource( 10 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="playground/StaticBody"]
+transform = Transform( 2.85943, 0, 0, 0, 1, 0, 0, 0, 2.85943, -7.68762, -0.717927, -16.7472 )
+shape = SubResource( 8 )
+
+[node name="MeshInstance" type="MeshInstance" parent="playground/StaticBody/CollisionShape5"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 1, 0, 0, 0 )
+mesh = SubResource( 9 )
+material/0 = SubResource( 10 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="playground/StaticBody"]
+transform = Transform( 0.723534, 0.690289, 0, -0.690289, 0.723534, 0, 0, 0, 1, 11.3847, 0, 0 )
+shape = SubResource( 8 )
+
+[node name="MeshInstance" type="MeshInstance" parent="playground/StaticBody/CollisionShape3"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 1, 0, 0, 0 )
+mesh = SubResource( 9 )
+material/0 = SubResource( 10 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="playground/StaticBody"]
+transform = Transform( 0.898488, 0.438999, 0, -0.438999, 0.898488, 0, 0, 0, 1, 11.3847, 0, 3.17301 )
+shape = SubResource( 8 )
+
+[node name="MeshInstance" type="MeshInstance" parent="playground/StaticBody/CollisionShape2"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 1, 0, 0, 0 )
+mesh = SubResource( 9 )
+material/0 = SubResource( 10 )
+
+[node name="World" type="StaticBody" parent="."]
+
+[node name="FloorCollision" type="CollisionShape" parent="World"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
+shape = SubResource( 2 )
+
+[node name="Floor" type="MeshInstance" parent="World/FloorCollision"]
+mesh = SubResource( 3 )
+skeleton = NodePath("../../..")
+material/0 = SubResource( 4 )
+
+[node name="MeshInstance" type="MeshInstance" parent="World/FloorCollision/Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.577711, 0 )
+mesh = SubResource( 5 )
+material/0 = SubResource( 6 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 7 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.471675, 0.838344, -0.273316, -0.439631, 0.492273, 0.75126, 0.764361, -0.234193, 0.600755, 0, 7.56883, 0 )
+shadow_enabled = true
+
+[node name="Debug" type="ColorRect" parent="."]
+visible = false
+anchor_bottom = 1.0
+rect_min_size = Vector2( 350, 0 )
+rect_clip_content = true
+color = Color( 0, 0, 0, 0.211765 )
+script = ExtResource( 5 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Debug"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 20
+custom_constants/margin_top = 20
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="GridContainer" parent="Debug/MarginContainer"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 330.0
+margin_bottom = 700.0
+columns = 2
+
+[node name="NameState" type="Label" parent="Debug/MarginContainer/VBoxContainer"]
+margin_right = 129.0
+margin_bottom = 14.0
+text = "State : "
+
+[node name="ValueState" type="Label" parent="Debug/MarginContainer/VBoxContainer" groups=["debug_label_state"]]
+margin_left = 133.0
+margin_right = 253.0
+margin_bottom = 14.0
+
+[node name="NameVelocity" type="Label" parent="Debug/MarginContainer/VBoxContainer"]
+margin_top = 18.0
+margin_right = 129.0
+margin_bottom = 32.0
+text = "Velocity : "
+
+[node name="ValueVelocity" type="Label" parent="Debug/MarginContainer/VBoxContainer" groups=["debug_label_velocity"]]
+margin_left = 133.0
+margin_top = 18.0
+margin_right = 253.0
+margin_bottom = 32.0
+
+[node name="NameDirection" type="Label" parent="Debug/MarginContainer/VBoxContainer"]
+margin_top = 36.0
+margin_right = 129.0
+margin_bottom = 50.0
+text = "Direction : "
+
+[node name="ValueDirection" type="Label" parent="Debug/MarginContainer/VBoxContainer" groups=["debug_label_direction"]]
+margin_left = 133.0
+margin_top = 36.0
+margin_right = 253.0
+margin_bottom = 50.0
+
+[node name="NameMoveSpeed" type="Label" parent="Debug/MarginContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 129.0
+margin_bottom = 68.0
+text = "Move speed : "
+
+[node name="ValueMoveSpeed" type="Label" parent="Debug/MarginContainer/VBoxContainer" groups=["debug_label_move_speed"]]
+margin_left = 133.0
+margin_top = 54.0
+margin_right = 253.0
+margin_bottom = 68.0
+
+[node name="NameMoveAcceleration" type="Label" parent="Debug/MarginContainer/VBoxContainer"]
+margin_top = 72.0
+margin_right = 129.0
+margin_bottom = 86.0
+text = "Move acceleration : "
+
+[node name="ValueMoveAcceleration" type="Label" parent="Debug/MarginContainer/VBoxContainer" groups=["debug_label_move_acceleration"]]
+margin_left = 133.0
+margin_top = 72.0
+margin_right = 253.0
+margin_bottom = 86.0
+
+[node name="NameGravityResistance" type="Label" parent="Debug/MarginContainer/VBoxContainer"]
+margin_top = 90.0
+margin_right = 129.0
+margin_bottom = 104.0
+text = "Gravity resistance : "
+
+[node name="ValueGravityResistance" type="Label" parent="Debug/MarginContainer/VBoxContainer" groups=["debug_label_gravity_resistance"]]
+margin_left = 133.0
+margin_top = 90.0
+margin_right = 253.0
+margin_bottom = 104.0
+
+[node name="NameVelocityIsNull" type="Label" parent="Debug/MarginContainer/VBoxContainer"]
+margin_top = 126.0
+margin_right = 129.0
+margin_bottom = 140.0
+text = "Velocity is null :"
+
+[node name="ValueVelocityIsNull" type="ColorRect" parent="Debug/MarginContainer/VBoxContainer" groups=["debug_color_indicator"]]
+margin_left = 133.0
+margin_top = 108.0
+margin_right = 253.0
+margin_bottom = 158.0
+rect_min_size = Vector2( 120, 50 )
+
+[node name="NameVelocityIsMax" type="Label" parent="Debug/MarginContainer/VBoxContainer"]
+margin_top = 180.0
+margin_right = 129.0
+margin_bottom = 194.0
+text = "Velocity is max :"
+
+[node name="ValueVelocityIsMax" type="ColorRect" parent="Debug/MarginContainer/VBoxContainer" groups=["debug_color_indicator2"]]
+margin_left = 133.0
+margin_top = 162.0
+margin_right = 253.0
+margin_bottom = 212.0
+rect_min_size = Vector2( 120, 50 )
